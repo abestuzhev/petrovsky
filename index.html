@@ -6,11 +6,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="./css/kernel_main.css" type="text/css" rel="stylesheet"/>
     <link href="./css/template_7d11270e5d7f3e349c4dcd03e8c66334.css" type="text/css" data-template-style="true" rel="stylesheet"/>
-    <link href="./css/modal-custom.css" type="text/css" data-template-style="true" rel="stylesheet"/>
 
+    <!--NEW STYLE-->
+    <!--*********************************************************************-->
+    <link href="./css/modal-custom.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+    <link href="./plugin/sumoselect.min.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+    <!--END NEW STYLE-->
 
     <script type="text/javascript" src="./js/kernel_main.js"></script>
     <script type="text/javascript" src="./js/template_bcb33e26d46f1b194426d84c92cde26d.js"></script>
+
+    <!--NEW SCRIPTS-->
+    <!--*********************************************************************-->
+    <script type="text/javascript" src="./plugin/jquery.sumoselect.min.js"></script>
+    <script type="text/javascript" src="./plugin/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="./js/modal-custom.js"></script>
+    <!--END NEW SCRIPTS-->
+
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
@@ -320,14 +332,14 @@
             <!--'start_frame_cache_m4hEn5'-->
             <div class="title3">Онлайн-форма резюме</div>
 
-            <form action="/work/" method="POST"><input type="hidden" name="bxajaxid" value=""/>
+            <form action="#" method="POST"><input type="hidden" name="" id="popup-wrap-vacancy__form" value=""/>
                 <div class="popup-wrap-custom__grid">
                     <div class="popup-wrap-custom__line">
                         <div class="popup-wrap-custom__left">
                             <div class="popup-wrap-custom__label">Вакансии</div>
                         </div>
                         <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
+                            <input type="text" name="user_name" value="" maxlength="255" placeholder="Вакансия" class="big-input">
                         </div>
                     </div>
                     <div class="popup-wrap-custom__line">
@@ -335,12 +347,36 @@
                             <div class="popup-wrap-custom__label">Могу также претендовать на должность</div>
                         </div>
                         <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
+                            <input type="text" name="user_name" value="" maxlength="255" placeholder="Должность" class="big-input">
                         </div>
                     </div>
                     <div class="popup-wrap-custom__line">
                         <div class="popup-wrap-custom__left">
-                            <div class="popup-wrap-custom__label">Ожидаемый уровень заработной платы*</div>
+                            <div class="popup-wrap-custom__label">Ожидаемый уровень заработной платы<span class="c-footnone">*</span></div>
+                        </div>
+                        <div class="popup-wrap-custom__right">
+                            <input type="number" name="user_name" value="" min="0" max="99999" maxlength="5" step="1" placeholder="Сумма з/п" class="small-input"> <span>рублей</span>
+                        </div>
+                    </div>
+                    <div class="popup-wrap-custom__line">
+                        <div class="popup-wrap-custom__left">
+                            <div class="popup-wrap-custom__label">Телефон<span class="c-footnone">*</span></div>
+                        </div>
+                        <div class="popup-wrap-custom__right">
+                            <input type="text" name="user_name" value="" placeholder="+7(000)000-00-00" class="big-input js-phone">
+                        </div>
+                    </div>
+                    <div class="popup-wrap-custom__line">
+                        <div class="popup-wrap-custom__left">
+                            <div class="popup-wrap-custom__label">Фамилия<span class="c-footnone">*</span></div>
+                        </div>
+                        <div class="popup-wrap-custom__right">
+                            <input type="text" name="user_name" value="" placeholder="Ваша фамилия" class="big-input">
+                        </div>
+                    </div>
+                    <div class="popup-wrap-custom__line">
+                        <div class="popup-wrap-custom__left">
+                            <div class="popup-wrap-custom__label">Имя<span class="c-footnone">*</span></div>
                         </div>
                         <div class="popup-wrap-custom__right">
                             <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
@@ -348,85 +384,67 @@
                     </div>
                     <div class="popup-wrap-custom__line">
                         <div class="popup-wrap-custom__left">
-                            <div class="popup-wrap-custom__label">Телефон*</div>
+                            <div class="popup-wrap-custom__label">Отчество <span class="c-footnone">*</span></div>
                         </div>
                         <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
+                            <input type="text" name="user_name" value="" placeholder="Ваше отчетсво" class="big-input">
                         </div>
                     </div>
                     <div class="popup-wrap-custom__line">
                         <div class="popup-wrap-custom__left">
-                            <div class="popup-wrap-custom__label">Фамилия*</div>
+                            <div class="popup-wrap-custom__label">Дата рождения<span class="c-footnone">*</span></div>
                         </div>
                         <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
+                            <input type="text" name="user_name" value="" placeholder="00.00.0000" class="small-input js-date">
                         </div>
                     </div>
                     <div class="popup-wrap-custom__line">
                         <div class="popup-wrap-custom__left">
-                            <div class="popup-wrap-custom__label">Имя*</div>
+                            <div class="popup-wrap-custom__label">Пол</div>
                         </div>
                         <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
+                            <div class="popup-wrap-custom-radio">
+                                <div class="popup-wrap-custom-radio__item">
+                                    <input type="radio" name="vacancy-gender" id="vacancy-gender-m" value="мужской" class="popup-wrap-custom-radio__input " checked>
+                                    <label class="popup-wrap-custom-radio__label" for="vacancy-gender-m">мужской</label>
+                                </div>
+                                <div class="popup-wrap-custom-radio__item">
+                                    <input type="radio" name="vacancy-gender" id="vacancy-gender-w" value=""  class="popup-wrap-custom-radio__input">
+                                    <label class="popup-wrap-custom-radio__label" for="vacancy-gender-w">женский</label>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                     <div class="popup-wrap-custom__line">
                         <div class="popup-wrap-custom__left">
-                            <div class="popup-wrap-custom__label">Отчество*</div>
+                            <div class="popup-wrap-custom__label">Гражданство<span class="c-footnone">*</span></div>
                         </div>
                         <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
-                        </div>
-                    </div>
-                    <div class="popup-wrap-custom__line">
-                        <div class="popup-wrap-custom__left">
-                            <div class="popup-wrap-custom__label">Дата рождения*</div>
-                        </div>
-                        <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
-                        </div>
-                    </div>
-                    <div class="popup-wrap-custom__line">
-                        <div class="popup-wrap-custom__left">
-                            <div class="popup-wrap-custom__label">Пол*</div>
-                        </div>
-                        <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
-                        </div>
-                    </div>
-                    <div class="popup-wrap-custom__line">
-                        <div class="popup-wrap-custom__left">
-                            <div class="popup-wrap-custom__label">Гражданство*</div>
-                        </div>
-                        <div class="popup-wrap-custom__right">
-                            <input type="text" name="user_name" value="" placeholder="Ваше имя" class="big-input">
+                            <select name="select-citizenship" class="c-select" id="select-citizenship">
+                                <option value="">Российская Федерация</option>
+                                <option value="">Америка</option>
+                                <option value="">Европа</option>
+                                <option value="">Африка</option>
+                                <option value="">Еще что то</option>
+                                <option value="">Еще что то</option>
+                                <option value="">Еще что то</option>
+                                <option value="">Еще что то</option>
+                            </select>
                         </div>
                     </div>
 
 
-                        <!--<input type="hidden" name="AJAX_CALL" value="Y"/>-->
-
-                        <!--<input type="hidden" name="sessid" id="sessid_1" value="33a33e05dd4c640242c06027299656ae"/>-->
-
-
-                        <input type="text" name="user_name" value="" placeholder="Ваше имя">
-                        <input type="text" name="user_phone" value="" placeholder="Ваш телефон">
-                        <input type="text" name="user_email" value="" placeholder="Ваш E-mail">
-                        <textarea placeholder="Вопрос" name="comment"></textarea>
-
-
-
-                        <div class="processing_data">
-                            <input type="checkbox" name="processing_data" id="" value="OK">
-                            <label for="processing_data_services_question"><span></span>Я согласен на <a
-                                    href="/company/processing-data/" target="_blank">обработку персональных данных</a></label>
-                        </div>
-
-                        <input type="hidden" name="location" value="petrovsky.ru/work/index.php">
-                        <input type="hidden" name="PARAMS_HASH" value="393c9b96f54e27eb8f9cfdd6c3f4eabb">
-                        <input type="submit" name="submit" class="btn" value="Отправить">
 
                 </div>
+                <div class="processing_data">
+                    <input type="checkbox" name="processing-data-vacancy"  id="processing-data-vacancy" value="OK">
+                    <label for="processing-data-vacancy"><span></span>Я согласен на <a
+                            href="/company/processing-data/" target="_blank">обработку персональных данных</a></label>
+                </div>
+
+                <input type="submit" name="submit" class="btn popup-wrap-vacancy__btn" value="Отправить" disabled>
             </form>
             <!--'end_frame_cache_m4hEn5'--></div>
     </div>
