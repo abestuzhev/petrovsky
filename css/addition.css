@@ -374,10 +374,14 @@
 
 
 @media screen and (max-width: 1140px) {
+    .vacancy-banner {
+        padding: 13px;
+    }
     .vacancy-banner__body {
         display: block;
         float: none;
         width: auto;
+        padding: 0;
         padding-left: 113px;
     }
     .vacancy-banner__item {
@@ -403,10 +407,10 @@
 @media screen and (max-width: 510px) {
     .vacancy-banner__img {
         float: none;
-        margin: 0 auto;
+        margin: 0 auto 10px;
     }
     .vacancy-banner__body {
-        padding-left:13px;
+        padding-left:0;
         text-align: center;
     }
 
