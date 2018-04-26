@@ -241,6 +241,7 @@
 .vacancy-card__name {
     margin-bottom: 5px;
     font-size: 21px;
+    padding-right: 145px;
 }
 
 .vacancy-card__wage {
@@ -371,6 +372,49 @@
     font: 15px 'Exo2-Regular', sans-serif;
 }
 
+
+@media screen and (max-width: 1140px) {
+    .vacancy-banner__body {
+        display: block;
+        float: none;
+        width: auto;
+        padding-left: 113px;
+    }
+    .vacancy-banner__item {
+        display: block;
+        width: 100%;
+    }
+
+    .vacancy-banner__application {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .vacancy-card__name {
+        padding-right: 45px;
+        font-size: 19px;
+    }
+
+    .vacancy-card-more__text {
+        display: none;
+    }
+}
+@media screen and (max-width: 510px) {
+    .vacancy-banner__img {
+        float: none;
+        margin: 0 auto;
+    }
+    .vacancy-banner__body {
+        padding-left:13px;
+        text-align: center;
+    }
+
+    .vacancy-banner__btn {
+        white-space: normal;
+    }
+
+}
 
 
 
