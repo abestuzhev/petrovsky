@@ -22,4 +22,29 @@ $(function(){
         '#processing-data-vacancy',
         '.popup-wrap-vacancy__btn'
     );
+
+    disabledFormButton(
+        '#popup-wrap-vacancy-search__form',
+        '#processing-data-vacancy-search',
+        '.popup-wrap-vacancy__btn'
+    );
+
+
+    $('.vacancy-card__header').on('click', function(e){
+        e.preventDefault();
+        $(this).find('.vacancy-card-more').toggleClass('is-show');
+        $(this)
+            .siblings('.vacancy-card__body').slideToggle(100);
+    });
+
+    $('.popbutton').on('click', function(){
+        $('.popwindow')
+            .find('.popup-wrap-custom__line:first-child')
+            .find('input').focus();
+    });
+
+    $('.vacancy-list .vacancy-popbutton').on('click', function(){
+        var title = $(this).parents('.vacancy-item').find('.vacancy-card__name').html();
+        $('.js-vacancy-input').val(title);
+    });
 });

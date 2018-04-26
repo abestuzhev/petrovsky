@@ -201,3 +201,186 @@
     }
 
 }
+
+
+/*vacancy*/
+.vacancy-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.vacancy-item {
+    padding: 0;
+    margin: 0 0 20px 0;
+    list-style: none;
+}
+
+.vacancy-card {
+    border: 1px solid #d7d7d7;
+    font: 14px 'Exo2-Regular', sans-serif;
+    position: relative;
+    transition: all .1s ease-out;
+}
+
+.vacancy-card:hover .vacancy-card__name {
+    color: #ff6600;
+    transition: all .1s ease-out;
+}
+.vacancy-card:hover {
+    border-color: #ff6600;
+    transition: all .1s ease-out;
+}
+
+.vacancy-card__header {
+    padding: 18px 23px;
+    position: relative;
+    cursor: pointer;
+}
+
+.vacancy-card__name {
+    margin-bottom: 5px;
+    font-size: 21px;
+}
+
+.vacancy-card__wage {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.vacancy-card-more {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 24px;
+    font-size: 14px;
+    color: #454545;
+}
+.vacancy-card-more.is-show .icon-drop-down {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.vacancy-card-more__text{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.vacancy-card-more .icon-drop-down {
+    padding: 8px 11px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.vacancy-card__body {
+    display: none;
+    padding: 0 23px 18px;
+}
+
+.vacancy-card__body .desc {
+    margin-bottom: 20px;
+}
+
+.vacancy-banner {
+    border: 1px solid #cccccc;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.vacancy-banner::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.vacancy-banner__img {
+    width: 104px;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.vacancy-banner__img img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.vacancy-banner__body {
+    /*float: left;*/
+    padding: 13px;
+    width: 88%;
+    display: table;
+}
+.vacancy-banner__body::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.vacancy-banner__item {
+    /*float: left;*/
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vacancy-banner__title {
+    font-size: 15px;
+    width: 32%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.vacancy-banner__text {
+    font-size: 15px;
+    font-style: italic;
+    width: 40%;
+}
+
+.vacancy-banner__application {
+    float: right;
+}
+
+.vacancy-banner__btn {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 24px;
+    background-color: #e8e8e8;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 15px 'Exo2-Regular', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
