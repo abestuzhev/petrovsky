@@ -179,7 +179,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cafe-anderson" />
     <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RunDashboard">
@@ -277,12 +277,12 @@
       <workItem from="1522310223790" duration="27000" />
       <workItem from="1522314671564" duration="7892000" />
       <workItem from="1523257066582" duration="8710000" />
-      <workItem from="1524724454069" duration="8717000" />
+      <workItem from="1524724454069" duration="9554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29856000" />
+    <option name="totallyTimeSpent" value="30693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-8" width="1873" height="1096" extended-state="6" />
